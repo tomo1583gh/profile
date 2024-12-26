@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* ----------------- */
+html {
+    font-size: 100%;
+}
+body {
+    background-color: rgb(241, 248, 205);
+    margin: auto 700px;
+    flex-basis: 700px;;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+dl {
+    overflow: hidden;
+    margin-top: 40px;
+}
+dt {
+    float: left;
+    font-weight: bold;
+    margin-right: 20px;
+}
+dd{
+    margin: 0 0 1em 0;
+}
+/* ------------------------- */
+.site-title {
+    display: flex;
+    justify-content: space-between;
+}
+.main-title {
+    width: 300px;
+    padding: 10px;
+}
+.nav-title {
+    display: flex;
+    padding: 10px;
+    font-weight: bold;
+}
+/* -------------------------- */
+.about-img {
+    text-align: center;
+    width: 400px;
+    height: auto;
+    margin: 50px auto;
+}
+.main-content {
+    background-color: rgb(255, 255, 240);
+    padding: 20px;
+}
