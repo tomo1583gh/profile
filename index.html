@@ -2,44 +2,115 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>自己紹介</title>
+        <title>Profile</title>
         <meta name="description" content="テキストテキストテキストテキストテキストテキストテキスト">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/">
+        <link rel="icon" href="img/ichigo-icon.png">
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    <header class="site-title">
-        <h1 class="main-title">自己紹介</h1>
-        <nav>
-            <ul class="nav-title">
+      <div class="wrapper">
+        <header class="site-title">
+          <h1 class="main-title">Profile</h1>
+            <nav>
+              <ul class="nav-title">
                 <li>
-                    <a href="about">About</a>
-                    <a href="detail">Detail</a>
+                  <a class="about-nav" href="#about">About</a>
+                  <a class="detail-nav" href="#detail">Detail</a>
+                  <a class="gallery-nav" href="#gallery">Gallery</a>
+                  <a class="message-nav" href="#message">Message</a>
                 </li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+          <div class="main-content">
+            <section id="about">
+              <h2 class="section-title">About</h2>
+                <div class="about-img">
+                  <img src="img/copy_17247366149507918604108131595114.jpg" alt="">
+                <div class="row">
+                  <dt>名前</dt>
+                  <dd>鈴木智宏</dd>
+                </div>
+                <div class="row">
+                  <dt>年齢</dt>
+                  <dd>41歳</dd>
+                </div>
+                <div class="row">
+                  <dt>血液型</dt>
+                  <dd>B型</dd>
+                </div>
+                <div class="row">
+                  <dt>座右の銘</dt>
+                  <dd>一期一会</dd>
+                </div>
+                <div class="row">
+                  <dt>趣味</dt>
+                  <dd>料理、スイーツ作り、ゲーム、アニメ鑑賞</dd>
+                </div>
+                </div>
+            </section>
+            <section id="detail">
+              <h2 class="section-title">Detail</h2>
+                <div class="detail-img">
+                  <img src="img/ichigo.jpg" alt="">
+                </div>
+                <div class="row">
+                  <dt>経歴</dt>
+                  <dd>専門学校卒業後、飲食店、製菓店勤務を経て自営でいちご農家を営む</dd>
+                </div>
+                <div class="row">
+                  <dt>特技</dt>
+                  <dd>料理全般、菓子製作（洋菓子）、植物栽培（野菜類）etc<br>
+                      現在プログラミングを勉強中</dd>
+                </div>
+            </section>
+            <section id="gallery">
+              <h2 class="section-title">Gallery</h2>
+                <div class="gallery-item">
+                <div class="gallery-img">
+                  <img class="item01" src="img/ichigo-01.jpg" alt>
+                  <img class="item02" src="img/ichigo-02.jpg" alt>
+                  <img class="item03" src="img/ichigo-03.jpg" alt>
+                  <img class="item04" src="img/ichigo-04.jpg" alt>
+                  <img class="item05" src="img/ichigo-05.jpg" alt>
+                  <img class="item06" src="img/ichigo-06.jpg" alt>
+                </div>
+                </div>
+            </section>
+            <section id="message">
+              <h2 class="section-title">message</h2>
+                <div class="form-container">
+                  <h3>お問い合わせフォーム</h3>
+                    <form action="#" method="post">
+                      <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" placeholder="お名前を入力して下さい" required>
+                      <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" placeholder="メールアドレスを入力して下さい" required>
+                      <label for="message">メッセージ</label>
+                      <textarea name="message" placeholder="メッセージを入力して下さい" rows="5" required></textarea>
+                      <button type="submit=">送信</button>
+                    </form>
+                </div>
+            </section>
+            <ul class="sns-title">
+              <li>
+                <a class="sns-item1" href="#"> Instagram</a>
+              </li>
+              <li>
+                <a class="sns-item2" href="#"> Twitter</a>
+              </li>
+              <li>
+                <a class="sns-item3" href="#"> Facebook</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main class="main-content">
-        <div id="about">
-            <div class="about-img">
-            <img src="img/copy_17247366149507918604108131595114.jpg" alt="">
-            <div class="nonteent-list">
-            </div>
-            <dl>
-                <dt>名前</dt>
-                <dd>鈴木智宏</dd>
-                <dt>年齢</dt>
-                <dd>42歳</dd>
-                <dt>趣味</dt>
-                <dd>料理、スイーツ作り、ゲーム、アニメ鑑賞</dd>
-                <dt></dt>
-            </dl>
-        </div>
-        <div id="detail"></div>
-        </div>
-    </main>
-        <footer></footer>
-    </body>
+          </div>
+      </main>
+      <footer id="footer">
+        <p><small> &copy; Profile </small></p>
+      </footer>
+    </div>
+  </body>
 </html>
